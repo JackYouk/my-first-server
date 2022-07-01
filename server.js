@@ -40,9 +40,20 @@ const todos = [
     
 // 2nd parameter = response obj
     // functions for responding to the specific request
+
+
+app.get('/todos', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'todo.html'))
+})
+
 app.get('/api/todos', (req, res) => {
     console.log('todos path hit');
     res.json(todos);
+})
+
+
+app.post('/api/todos', (req, res) => {
+
 })
 
 app.get('/api/me', (req, res) => {
