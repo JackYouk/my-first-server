@@ -153,6 +153,9 @@ app.get('/api/me', (req, res) => {
 });
 
 
+// app.get('/api/blogs', (req, res) => res.send('hit /api/blogs with GET'));
+// app.get('/api/blogs', (req, res) => res.send('hit /api/blogs with GET'));
+
 /*  GET POST PUT/PATCH DELETE    */
 
 
